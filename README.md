@@ -84,13 +84,12 @@ custom-8bit-cpu/
 │   ├── datapath.v                # Datapath integration without PC and Instruction Memory
 │   └── top_module.v              # Top-level CPU module (complete end-to-end cpu) 
 │
-├── tb/                    # Verification files
+├── tb/                           # Verification files
 │   ├── testbench_alu.v
 │   ├── testbench_reg_file.v
 │   ├── testbench_memory.v
-│   ├── testbench_instruction_memory.v
+│   ├── testbench_datapath.v
 │   ├── testbench_decoder.v
-│   ├── testbench_program_counter.v
 │   ├── testbench_fibonacci.v         # Top-level test: Fibonacci sequence , self checking
 │   └── testbench_2.v                 # Top-level test: tests the jump operation , self checking     
 │
