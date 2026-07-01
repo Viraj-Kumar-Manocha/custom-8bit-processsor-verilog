@@ -102,9 +102,14 @@ custom-8bit-cpu/
 │   └── timing_summary.png        # Max frequency screenshot
 │
 ├── docs/                          # Documentation
-│   └── isa_spec.md                # Instruction set details
+│   ├── isa_spec.md                # Instruction set details
+│   └── schematics
+│       ├── cpu_schematic.png                        #design of top module
+│       ├── Elaborated_cpu_schematic.png             #design of top module, with all components expanded,except reg_file and memory
+│
 │
 ├── LICENSE
+│
 └── README.md
 ```
 
@@ -167,12 +172,12 @@ Fmax = 1 / Achievable Clock Period
 
 Target Period = 10.000 ns → WNS = +7.543 ns → Achievable Period = 2.457 ns → Fmax ≈ 407 MHz
 
-Target Period = 3.000 ns → WNS = +0.543 ns → Achievable Period = 2.457 ns → Fmax ≈ 407 MHz
+Target Period = 3.000 ns → WNS = +0.544 ns → Achievable Period = 2.457 ns → Fmax ≈ 407 MHz
 
 Target Period = 2.457 ns → WNS = +0.000 ns → Achievable Period = 2.457 ns → Fmax ≈ 407 MHz
 
 
-> 📄 Full synthesis and timing reports available in [`synthesis/synthesis_report.txt`](synthesis/synthesis_report.txt).
+> 📄 Full synthesis and timing reports available in [`cpu_timing`](synthesis/cpu_timing.rpx).
 
 ---
 
