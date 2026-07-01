@@ -176,6 +176,15 @@ Target Period = 2.457 ns → WNS = +0.000 ns → Achievable Period = 2.457 ns �
 
 ---
 
+## 🖼️ Schematics
+
+Top-level RTL schematic generated in Vivado:
+
+![Top Module Schematic](docs/schematics/top_module_schematic.png)
+
+Additional module-level schematics available in [`docs/schematics/`](docs/schematics/).
+
+
 ## 🚀 Getting Started
 
 ### Prerequisites
