@@ -33,7 +33,7 @@ Used for: `ADDI`
 |---------|--------|-------|------|---------|---------|
 | Field   | opcode | rd    | rs   | unused  | imm8    |
 
-- Same layout as R-type, but `alu_src = 1`, so the ALU takes `imm8` instead of `rs` as its second operand.
+- Same layout as R-type, but `alu_src = 1`, so the ALU takes `imm8` instead of `rs` as its second operand, and `rs` instead of `rd` as first operand.
 
 ### 3. Memory-Type (Load/Store)
 
