@@ -169,11 +169,11 @@ Fmax is derived from the Worst Negative Slack (WNS) reported by Vivado's timing 
 Achievable Clock Period = Target Clock Period − WNS  
 Fmax = 1 / Achievable Clock Period
 
-Target Period = 10.000 ns → WNS = +7.543 ns → Achievable Period = 2.457 ns → Fmax ≈ 407 MHz
+Target Period = 10.000 ns → WNS = +7.544 ns → Achievable Period = 2.456 ns → Fmax ≈ 407 MHz
 
-Target Period = 3.000 ns → WNS = +0.544 ns → Achievable Period = 2.457 ns → Fmax ≈ 407 MHz
+Target Period = 3.000 ns → WNS = +0.544 ns → Achievable Period = 2.456 ns → Fmax ≈ 407 MHz
 
-Target Period = 2.457 ns → WNS = +0.000 ns → Achievable Period = 2.457 ns → Fmax ≈ 407 MHz
+Target Period = 2.456 ns → WNS = +0.000 ns → Achievable Period = 2.456 ns → Fmax ≈ 407 MHz
 
 
 > 📄 Full synthesis and timing reports available in [`cpu_timing`](synthesis/cpu_timing.rpx).
