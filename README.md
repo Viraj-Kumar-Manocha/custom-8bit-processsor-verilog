@@ -82,7 +82,7 @@ custom-8bit-cpu/
 │   ├── decoder.v                 # Instruction Decoder
 │   ├── program_counter.v         # Program Counter 
 │   ├── datapath.v                # Datapath integration without PC and Instruction Memory
-│   └── top.v                     # Top-level CPU module (complete end-to-end cpu) 
+│   └── top_module.v              # Top-level CPU module (complete end-to-end cpu) 
 │
 ├── testbench/                    # Verification files
 │   ├── testbench_alu.v
