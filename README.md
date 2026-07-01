@@ -98,7 +98,7 @@ custom-8bit-cpu/
 │   └──timing_constraints.xdc     #XDC Constraints file used for synthesis
 │
 ├── synthesis/                    # Synthesis outputs
-│   ├── synthesis_report.txt      # Timing / utilization report
+│   ├── cpu_timing.rpx            # Timing / utilization report, synthesis report of top module
 │   └── timing_summary.png        # Max frequency screenshot
 │
 ├── docs/                          # Documentation
@@ -180,7 +180,7 @@ Target Period = 2.457 ns → WNS = +0.000 ns → Achievable Period = 2.457 ns �
 
 Top-level RTL schematic generated in Vivado:
 
-![Top Module Schematic](docs/schematics/top_module_schematic.png)
+![Top Module Schematic](docs/schematics/cpu_schematic.png)
 
 Additional module-level schematics available in [`docs/schematics/`](docs/schematics/).
 
