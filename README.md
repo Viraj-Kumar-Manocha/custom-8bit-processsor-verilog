@@ -85,13 +85,14 @@ custom-8bit-cpu/
 │   └── top.v                     # Top-level CPU module (complete end-to-end cpu) 
 │
 ├── testbench/                    # Verification files
-│   ├── tb_alu.v
-│   ├── tb_reg_file.v
-│   ├── tb_memory.v
-│   ├── tb_instruction_memory.v
-│   ├── tb_decoder.v
-│   ├── tb_program_counter.v
-│   └── tb_top_fibonacci.v        # Top-level test: Fibonacci sequence , self checking
+│   ├── testbench_alu.v
+│   ├── testbench_reg_file.v
+│   ├── testbench_memory.v
+│   ├── testbench_instruction_memory.v
+│   ├── testbench_decoder.v
+│   ├── testbench_program_counter.v
+│   ├── testbench_fibonacci.v         # Top-level test: Fibonacci sequence , self checking
+│   └── testbench_2.v                 # Top-leve test: tests the jump operation , self checking     
 │
 ├── constraints/                  # Timing Constraints
 │   └──timing_constraints.xdc     #XDC Constraints file used for synthesis
