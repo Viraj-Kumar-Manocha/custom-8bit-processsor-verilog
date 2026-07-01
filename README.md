@@ -84,7 +84,7 @@ custom-8bit-cpu/
 │   ├── datapath.v                # Datapath integration without PC and Instruction Memory
 │   └── top_module.v              # Top-level CPU module (complete end-to-end cpu) 
 │
-├── testbench/                    # Verification files
+├── tb/                    # Verification files
 │   ├── testbench_alu.v
 │   ├── testbench_reg_file.v
 │   ├── testbench_memory.v
