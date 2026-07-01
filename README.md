@@ -92,7 +92,7 @@ custom-8bit-cpu/
 │   ├── testbench_decoder.v
 │   ├── testbench_program_counter.v
 │   ├── testbench_fibonacci.v         # Top-level test: Fibonacci sequence , self checking
-│   └── testbench_2.v                 # Top-leve test: tests the jump operation , self checking     
+│   └── testbench_2.v                 # Top-level test: tests the jump operation , self checking     
 │
 ├── constraints/                  # Timing Constraints
 │   └──timing_constraints.xdc     #XDC Constraints file used for synthesis
