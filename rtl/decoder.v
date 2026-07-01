@@ -1,23 +1,4 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 25.06.2026 01:16:57
-// Design Name: 
-// Module Name: decoder
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
 //24 bit ISA -> 5 bit op code + 5 bit reg 1 + 5 bit reg 2 or 8 bit immediate or 12 bit mem_addr dependening upon op code
 module decoder(input [23:0] inst,
