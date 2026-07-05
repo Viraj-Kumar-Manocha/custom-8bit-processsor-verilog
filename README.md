@@ -150,6 +150,12 @@ Each module was verified independently before system integration:
 
 The complete CPU was validated by loading a Fibonacci sequence generator program into instruction memory and running it through the fully integrated datapath. The correct sequence was produced and verified against expected values, confirming that instruction fetch, decode, execution, memory access, and register writeback all function correctly together.
 
+## 📈 Simulation Output
+
+Fibonacci sequence execution waveform:
+
+![Waveform](docs/waveforms/fibonacci.png)
+
 ---
 
 ## 📊 Synthesis Results
@@ -189,6 +195,20 @@ Top-level RTL schematic generated in Vivado:
 Additional module-level schematics available in [`docs/schematics/`](docs/schematics/).
 
 
+## 🧠 Design Decisions
+
+- **24-bit ISA instead of 8/16-bit:**  
+  Chosen to allow flexible encoding of opcode, register indices, and immediate values without excessive instruction constraints.
+
+- **Single-cycle architecture:**  
+  Simplifies control logic and ensures deterministic execution at the cost of longer critical path.
+
+- **Modular datapath design:**  
+  Each component (ALU, Register File, Decoder) was independently verified before integration to ensure correctness and scalability.
+
+- **Separate instruction and data memory:**  
+  Enables cleaner architecture and avoids structural hazards.
+
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -201,7 +221,7 @@ Additional module-level schematics available in [`docs/schematics/`](docs/schema
    cd custom-8bit-processor-verilog
    ```
 2. Open Vivado and create a new project, adding all files from `rtl/` as design sources.
-3. Add the desired testbench from `testbench/` as a simulation source.
+3. Add the desired testbench from `tb/` as a simulation source.
 4. Run **Behavioral Simulation** to view waveforms in the Vivado waveform viewer.
 
 ### Running Synthesis
@@ -216,6 +236,7 @@ Additional module-level schematics available in [`docs/schematics/`](docs/schema
 - Implement pipelining to improve throughput
 - Add hazard detection and forwarding logic
 - Expand instruction set with more control-flow instructions
+- Develop a simple assembler to convert assembly programs into machine code
 
 ---
 
