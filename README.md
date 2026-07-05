@@ -102,11 +102,14 @@ custom-8bit-cpu/
 │
 ├── docs/                          # Documentation
 │   ├── isa_spec.md                # Instruction set details
+│   ├── fibonacci_result.png
 │   └── schematics
 │       ├── cpu_schematic.png                        #design of top module
 │       ├── Elaborated_cpu_schematic.png             #design of top module, with all components expanded,except reg_file and memory
-│
-│
+│       ├── alu_schematic.png                        #schematic of alu module
+│       ├── decoder_schematic.png                    #schematic of decoder (control unit)
+│       └── program_counter.png                      #schematic of program counter
+│        
 ├── LICENSE
 │
 └── README.md
@@ -152,9 +155,9 @@ The complete CPU was validated by loading a Fibonacci sequence generator program
 
 ## 📈 Simulation Output
 
-Fibonacci sequence execution waveform:
+Fibonacci sequence execution:
 
-![Waveform](docs/waveforms/fibonacci.png)
+![Waveform](docs/fibonacci_result.png)
 
 ---
 
